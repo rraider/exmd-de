@@ -1,0 +1,107 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #333;
+    background-image: linear-gradient(to bottom right, #333, #343434);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.orbit {
+    position: absolute;
+    width: 80vw;
+    height: 80vw;
+    max-width: 350px;
+    max-height: 350px;
+    border-radius: 50%;
+
+    border: solid 3px #ddd;
+}
+
+
+.me {
+    background-color:  #ddd;
+    background-image: url('/assets/joni-1.jpg');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 60vw;
+    height: 60vw;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 50%;
+
+    border: solid 5px white;
+}
+
+.planet {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hexagon {
+    position: relative;
+    width: 40px; 
+    height: 23.09px;
+    background-color: #ddd;
+    margin: 11.55px 0;
+  }
+  
+  .hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+  }
+  
+  .hexagon:before {
+    bottom: 100%;
+    border-bottom: 11.55px solid #ddd;
+  }
+  
+  .hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 11.55px solid #ddd;
+  }
+
+
+.twitter {
+    transform: translateY(172px);
+}
+.github {
+    transform: translateY(152px) translateX(-80px);
+}
+.mail {
+    transform: translateY(152px) translateX(80px);
+}
+.blog {
+    transform: translateY(35px) translateX(170px);
+}
+.alpaka {
+    transform: translateY(102px) translateX(-140px);
+}
+.photo {
+    transform: translateY(35px) translateX(-170px);
+}
+.pgp {
+    transform: translateY(102px) translateX(140px);
+}
