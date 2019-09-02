@@ -7,7 +7,7 @@ services:
     volumes:
       - ./app:/usr/share/nginx/html
     labels:
-      - traefik.frontend.rule=Host:harmoniemand.de
+      - traefik.frontend.rule=Host:exmd.de
       - traefik.docker.network=traefik_net
       - traefik.enable=true
       - traefik.port=80
