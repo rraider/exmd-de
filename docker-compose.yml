@@ -6,5 +6,15 @@ services:
     restart: always
     volumes:
       - ./app:/usr/share/nginx/html
-    ports:
-      - 8080:80
+labels:
+      - traefik.frontend.rule=Host:exmd.de
+      - traefik.docker.network=traefik_net
+      - traefik.enable=true
+      - traefik.port=80
+    networks:
+      - traefik_net
+
+networks:
+  traefik_net:
+    external: true
+
