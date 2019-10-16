@@ -102,6 +102,6 @@ body {
 .photo {
     transform: translateY(35px) translateX(-170px);
 }
-.pgp {
+.projects {
     transform: translateY(102px) translateX(140px);
 }
