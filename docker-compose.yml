@@ -6,7 +6,7 @@ services:
     restart: always
     volumes:
       - ./app:/usr/share/nginx/html
-labels:
+    labels:
       - traefik.frontend.rule=Host:exmd.de
       - traefik.docker.network=traefik_net
       - traefik.enable=true
